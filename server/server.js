@@ -10,7 +10,7 @@ mongoose
 
 const io = require("socket.io")(3001, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://google-docs-clone-liart-theta.vercel.app",
       methods: ["GET", "POST"],
     },
   })
