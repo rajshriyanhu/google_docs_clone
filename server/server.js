@@ -9,11 +9,14 @@ mongoose
   .catch((err) => console.log(err));
 
 const io = require("socket.io")(3001, {
-    cors: {
-      origin: "https://google-docs-clone-liart-theta.vercel.app",
-      methods: ["GET", "POST"],
-    },
-  })
+  cors: {
+    origin: "https://google-docs-clone-72aqqyrj7-rajshriyanhu.vercel.app",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["*"], // You can adjust allowed headers as needed
+    credentials: true, // You might need this if you're dealing with cookies or authentication
+  },
+});
+
 
   const defaultValue = ""
 
